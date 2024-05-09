@@ -1,6 +1,6 @@
 <?php
 
-require_once ('models/production.php');
+require_once (__DIR__ . '/models/production.php');
 
 $productions = [];
 
