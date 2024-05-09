@@ -26,7 +26,7 @@ require_once (__DIR__ . '/db.php');
 
   <section>
     <div class="container py-5">
-      <div class="row">
+      <div class="row g-5">
         <?php
         foreach ($productions as $production):
           ?>
@@ -38,6 +38,7 @@ require_once (__DIR__ . '/db.php');
               <div class="card-body">
                 <p>Lingua: <?php echo $production->language ?></p>
                 <p>Voto: <?php echo $production->vote ?></p>
+                <p><?php echo $production->genre->name . ': ' . $production->genre->description ?></p>
               </div>
             </div>
           </div>

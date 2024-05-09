@@ -4,12 +4,14 @@ class Production
   public $title;
   public $language;
   public $vote;
+  public $genre;
 
-  public function __construct($_title, $_language, $_vote)
+  public function __construct($_title, $_language, $_vote, Genre $_genre)
   {
     $this->title = $_title;
     $this->language = $_language;
     $this->vote = $_vote;
+    $this->genre = $_genre;
   }
 
   public function getTitle()
