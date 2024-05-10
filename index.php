@@ -19,8 +19,6 @@ require_once (__DIR__ . '/db.php');
 
 <body>
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
   <?php include_once (__DIR__ . '/components/header.php')
     ?>
 

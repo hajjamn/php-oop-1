@@ -3,14 +3,18 @@
 require_once (__DIR__ . '/models/production.php');
 require_once (__DIR__ . '/models/genre.php');
 
-$genres = [];
 
-$genres[] = $kids = new Genre('Kids', 'film per bambini');
+$kids = new Genre('Kids', 'film per bambini');
 
-$genres[] = $adult = new Genre('Adult', 'film per adulti');
+$adult = new Genre('Adult', 'film per adulti');
 
-$genres[] = $peter = new Genre('Pietro', 'film per maestri back-end developers');
+$peter = new Genre('Pietro', 'film per maestri back-end developers');
 
+$genres = [
+  $kids,
+  $adult,
+  $peter
+];
 
 $productions = [];
 
