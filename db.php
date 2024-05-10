@@ -16,22 +16,32 @@ $genres = [
   $peter
 ];
 
-$productions = [];
+$pippo = new Production('Pippo', 'Italiano', '8', $kids);
 
-$productions[] = $pippo = new Production('Pippo', 'Italiano', '8', $kids);
+$pluto = new Production('Pluto', 'Inglese', '9', $kids);
 
-$productions[] = $pluto = new Production('Pluto', 'Inglese', '9', $kids);
+$paperino = new Production('Paperino', 'Francese', '1', $kids);
 
-$productions[] = $paperino = new Production('Paperino', 'Francese', '1', $kids);
+$minnie = new Production('Minnie', 'Aramaico', '3', $adult);
 
-$productions[] = $minnie = new Production('Minnie', 'Aramaico', '3', $adult);
+$etaBeta = new Production('Eta-Beta', 'Tedesco', '7', $adult);
 
-$productions[] = $etaBeta = new Production('Eta-Beta', 'Tedesco', '7', $adult);
+$gastone = new Production('Gastone', 'Spagnolo', '5', $kids);
 
-$productions[] = $gastone = new Production('Gastone', 'Spagnolo', '5', $kids);
+$paperoga = new Production('Paperoga', 'Marocchino', '2', $adult);
 
-$productions[] = $paperoga = new Production('Paperoga', 'Marocchino', '2', $adult);
+$ciccio = new Production('Ciccio', 'Russo', '4', $kids);
 
-$productions[] = $ciccio = new Production('Ciccio', 'Russo', '4', $kids);
+$pietro = new Production('Pietro', 'Siciliano', '10', $peter);
 
-$productions[] = $pietro = new Production('Pietro', 'Siciliano', '10', $peter);
+$productions = [
+  $pippo,
+  $pluto,
+  $paperino,
+  $minnie,
+  $etaBeta,
+  $gastone,
+  $paperoga,
+  $ciccio,
+  $pietro
+];
