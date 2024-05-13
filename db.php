@@ -2,6 +2,8 @@
 
 require_once (__DIR__ . '/models/production.php');
 require_once (__DIR__ . '/models/genre.php');
+require_once (__DIR__ . '/models/tvserie.php');
+require_once (__DIR__ . '/models/movie.php');
 
 
 $kids = new Genre('Kids', 'film per bambini');
@@ -34,6 +36,7 @@ $ciccio = new Production('Ciccio', 'Russo', '4', $kids);
 
 $pietro = new Production('Pietro', 'Siciliano', '10', $peter);
 
+
 $productions = [
   $pippo,
   $pluto,
@@ -44,4 +47,13 @@ $productions = [
   $paperoga,
   $ciccio,
   $pietro
+];
+
+$ambra = new Movie('Ambra', 'Italiano', '10', $kids, 'Millemila Euro', '180 minuti');
+
+$francesca = new TVSerie('Francesca', 'Italiano stentato', '0', $kids, '1 per fortuna');
+
+$robenuove = [
+  $ambra,
+  $francesca
 ];
